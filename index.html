@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/my-style.css">
+  
+  <title>Practica de flexbox, mediaquery y pseudoelementos</title>
+</head>
+<body>
+  <header class="hero">
+    <nav class="hero__nav container">
+      <figure class="hero__logo">
+        <img class="hero__huddle" src="images/logo.svg" alt="image logo">
+      </figure>
+      <a href="#" class="hero__cta">Try it free</a>
+    </nav>
+
+    <section class="hero__main container">
+      <!--Build The Community Your Fans Will Love-->
+      <div class="hero__texts">
+        <h1 class="hero__title">Build The Community Your Fans Will Love</h1>
+        <p class="hero__paragraph">Huddle re-imagines the way we build communities. You have a voice, but so does 
+          your audience. Create connections with your users as you engage in genuine discussion. </p>
+        <a class="cta" href="#">Get Started For Free</a>
+      </div>
+
+      <!-- mockups -->
+      <figure class="hero__picture">
+        <img class="hero__img" src="images/screen-mockups.svg" alt="screen-mockups">
+      </figure>
+
+      <!-- communities and messages -->
+      <div class="hero__numbers">
+        <div class="hero__items">
+          <img class="hero__icon" src="images/icon-communities.svg" alt="icon-communities">
+          <h3 class="hero__number">1.4k+</h3>
+          <p class="hero__community">Communities Formed</p>
+        </div>
+        
+        <div class="hero__messages">
+          <img class="hero__icon" src="images/icon-messages.svg" alt="icon-messages">
+          <h3 class="hero__number">2.7m+</h3>
+          <p class="hero__messages">Messages Sent</p>
+        </div> 
+      </div>
+    </section>
+
+    <!-- the wave shape -->
+    <div class="wave wave--bottom"></div>
+  </header>
+
+  <main class="main">
+    <!-- GROW TOGETHER -->
+    <section class="section">
+      <div class="section__container container">
+        <figure class="section__picture">
+          <img class="section__img" src="images/illustration-grow-together.svg" alt="illustration-grow-together">
+        </figure>
+        <div class="section__texts">
+          <h2 class="subtitle">Grow Together</h2>
+          <p class="section__paragraph">Generate meaningful discussions with your audience and build a strong, loyal community. 
+            Think of the insightful conversations you miss out on with a feedback form.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOWING CONVERSATIONS -->
+    <!-- pongo el modificador section--white para cambiar el color de fondo -->
+    <section class="section section--white">
+      <div class="section__container container section__container--inverse"> <!-- section__container--inverse es un modificador para que pueda hacer un espejo en esta sección. -->
+        <figure class="section__picture">
+          <img class="section__img" src="images/illustration-flowing-conversation.svg" alt="illustration-grow-together">
+        </figure>
+        <div class="section__texts">
+          <h2 class="subtitle">Flowing Conversations</h2>
+          <p class="section__paragraph">You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+            just-in-time loading for a more natural flow.</p>
+        </div>
+      </div>
+
+      <!-- estas formas se posicionan con el position:relative -->
+      <div class="wave wave--top"></div>
+      <div class="wave wave--bottom"></div>
+    </section>
+
+    <!-- YOUR USERS -->
+    <section class="section">
+      <div class="section__container container">
+        <figure class="section__picture">
+          <img class="section__img" src="images/illustration-your-users.svg" alt="illustration-your-users">
+        </figure>
+        <div class="section__texts">
+          <h2 class="subtitle">Your Users</h2>
+          <p class="section__paragraph">It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+            once signed in to your app, your users can start chatting immediately.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="question">
+      <div class="section_texts container">
+        <h2 class="subtitle">Ready To Build Your Community?</h2>
+          <a href="#" class="cta">Get Started For Free</a>
+      </div>
+      <div class="wave wave--top"></div>
+      <div class="wave wave--bottom"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <section class="footer__newsletter">
+        <h2 class="footer__title">Newsletter</h2>
+        <p class="footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          vestibulum a, ultrices quis sem</p>
+          <form class="footer__form">
+            <input class="footer__input" type="email">
+            <input class="footer__cta" type="submit" value="Subscribe">
+          </form>
+      </section>
+
+      <section class="footer__content">
+        <img class="footer__logo" src="images/logo-blanco.png" alt="logo">
+        <p class="footer__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          vestibulum a, ultrices quis sem</p>
+
+          <!--en el CSS: .footer__contact::after{content: "Phone: +1-543-123-4567"; -->
+          <div class="footer__contact">
+            <img src="images/icon-phone.svg" alt="icon-phone" class="footer__img">
+          </div>
+          <!--en el CSS: .footer__contact--email::after{content: "example@huddle.com"} -->
+          <div class="footer__contact footer__contact--email">
+            <img src="images/icon-email.svg" alt="icon-email" class="footer__img">
+          </div>
+
+          <div class="footer__social">
+            <a class="footer__link" href="#">
+              <img class="footer__icon" src="images/fb.svg" alt="logo facebook">
+            </a>
+            <a class="footer__link" href="#">
+              <img class="footer__icon" src="images/instagram.svg" alt="logo instagram">
+            </a>
+            <a class="footer__link" href="#">
+              <img class="footer__icon" src="images/twiter.svg" alt="logo twiter">
+            </a>
+          </div>
+      </section>
+    </div>
+  </footer>
+
+
+  <!-- 
+  
+  Newsletter
+  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+  send you spam or pass on your email address
+
+  Subscribe -->
+</body>
+</html>
